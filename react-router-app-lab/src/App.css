@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Navbar Styles */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1e3a8a;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #facc15;
+}
+
+/* Main Component */
+h1 {
+  font-size: 2.5rem;
+  margin: 50px 0;
+  color: #1e3a8a;
+}
+
+/* Currencies Component */
+.currencies {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.currencies a {
+  background-color: #fff;
+  border: 2px solid #1e3a8a;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #1e3a8a;
+  width: 150px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.currencies a:hover {
+  background-color: #1e3a8a;
+  color: white;
+  transform: translateY(-5px);
+}
+
+/* Price Component */
+.price-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 40px;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.price-container h1 {
+  font-size: 2rem;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+.price-container h2 {
+  font-size: 1.5rem;
+  color: #facc15;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #facc15;
+  color: #1e3a8a;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .currencies {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .currencies a {
+    width: 100%;
+    max-width: 300px;
+  }
+}
